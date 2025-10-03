@@ -6,28 +6,28 @@
 
 @font-face {
     font-family: 'AikidoFontTitle';
-    src: url('./tipografía/Parkinsans/static/Parkinsans-Regular.ttf');
+    src: url('../tipografía/Parkinsans/static/Parkinsans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AikidoFontTitle';
-    src: url('./tipografía/Parkinsans/static/Parkinsans-Bold.ttf');
+    src: url('../tipografía/Parkinsans/static/Parkinsans-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AikidoFont';
-    src: url('./tipografía/Poppins/Poppins-Regular.ttf');
+    src: url('../tipografía/Poppins/Poppins-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AikidoFont';
-    src: url('./tipografía/Poppins/Poppins-Bold.ttf');
+    src: url('../tipografía/Poppins/Poppins-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
@@ -74,79 +74,6 @@ body {
     color: white;
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
-}
-
-.btn-danger {
-    background-color: #610b0a;
-    border: none;
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(26, 42, 108, 0.3);
-}
-
-/*  MAIN  */
-.display-4 {
-    font-family: AikidoFontTitle;
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-}
-
-.lead {
-    font-size: 1.25rem;
-    color: black;
-    margin-bottom: 2rem;
-    line-height: 1.7;
-}
-
-/*  IMAGEN PRINCIPAL  */
-.img-main {
-    position: relative;
-}
-
-.img-main__img-fluid {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);   
-}
-
-.card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    overflow: hidden;
-    margin: 2rem auto;
-    max-width: 400px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.card:hover .card-img-top {
-    transform: scale(1.05);
-}
-
-.card-body {
-    padding: 1.5rem;
-}
-
-.card-title {
-    color: black;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.card-text {
-    color: black;
-    margin-bottom: 1rem;
 }
 
 /*  FOOTER  */

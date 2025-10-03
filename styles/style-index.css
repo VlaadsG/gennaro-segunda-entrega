@@ -34,15 +34,14 @@
 
 /* COLOR FONDO */
 body {
-    margin: 0;
-    padding: 5%;
-    min-height: 100vh;
+    font-family: 'AikidoFont';
+    line-height: 1.6;
+    color: black;
     background: linear-gradient(90deg,
             #fcf7eb 0%,
             #fcf7eb 70%,
             #610b0a 70%,
             #610b0a 100%);
-    font-family: AikidoFont;
 }
 
 /* NAV */
@@ -81,6 +80,92 @@ body {
     border-radius: 50px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(26, 42, 108, 0.3);
+}
+
+/*  MAIN  */
+.custom-header {
+    padding: 4rem;
+    margin-top: 76px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title {
+    font-family: 'AikidoFontTitle';
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.header-text {
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #af1010;
+    color: white;
+    padding: 0.75rem 1.875rem;
+    font-size: 1.20rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    max-width: 200px;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(71, 11, 17, 0.815);
+}
+
+/*  IMAGEN PRINCIPAL  */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/*TARJETA MAPS BT*/
+.maps-section {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+    max-width: 400px;
 }
 
 /*  FOOTER */
@@ -152,40 +237,56 @@ body {
 
 
 /*  RESPONSIVE  */
-@media (max-width: 700px) {
-    .display-4 {
-        font-size: 2.5rem;
+@media (max-width: 768px) {
+    .header-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
     }
 
-    header {
-        padding: 4rem 0 2rem;
-        margin-top: 76px;
+    .header-content {
+        order: 1;
     }
 
-    .img-main {
-        margin-top: 2rem;
+    .img-container {
+        order: 2;
     }
 
-    .navbar-brand {
-        font-size: 1.5rem;
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
     }
 
-    .card {
-        margin: 1rem;
+    .footer-copyright {
+        text-align: center;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .custom-header {
+        padding: 2rem 0;
     }
 }
 
-@media (max-width: 500px) {
-    .display-4 {
+@media (max-width: 480px) {
+    .main-title {
         font-size: 2rem;
     }
 
-    .lead {
+    .header-text {
         font-size: 1.1rem;
     }
 
-    .btn-danger {
-        padding: 10px 25px;
-        font-size: 0.9rem;
+    .custom-btn {
+        padding: 0.625rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
